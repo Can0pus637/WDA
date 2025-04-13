@@ -1,0 +1,26 @@
+List of CLB Tiles
+CLEL_L_X67Y184
+CLEL_R_X67Y184
+CLEL_R_X64Y93
+CLEL_L_X63Y28
+CLEL_R_X63Y28
+CLEM_X59Y247
+CLEL_R_X59Y247
+CLEM_X55Y58
+CLEL_R_X55Y58
+CLEM_X54Y147
+CLEM_X54Y268
+CLEM_X48Y92
+CLEM_X44Y127
+CLEL_R_X44Y127
+CLEM_X41Y311
+CLEL_R_X41Y311
+
+List of Congested Nets
+u_random_matrix/A_reg[2][15][0]_rep__9_1
+u_random_matrix/A_reg[4][0][0]_rep__8_0
+u_Array_Input/gen_rows[13].gen_cols[3].LUT_second/addr_reg[2]_0
+u_random_matrix/LUT_out[7]_i_201__420_n_0
+u_random_matrix/i___1_i_5__249_n_0
+u_Array_Input/gen_rows[7].gen_cols[13].LUT_first/i___1_i_2__249
+

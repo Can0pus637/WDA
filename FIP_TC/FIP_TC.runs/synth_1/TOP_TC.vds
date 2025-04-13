@@ -1,0 +1,316 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Mar 25 08:50:48 2025
+# Process ID: 64300
+# Current directory: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.runs/synth_1
+# Command line: vivado.exe -log TOP_TC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_TC.tcl
+# Log file: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.runs/synth_1/TOP_TC.vds
+# Journal file: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.runs/synth_1\vivado.jou
+# Running On: CANOPUS637, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 16, Host memory: 33736 MB
+#-----------------------------------------------------------
+source TOP_TC.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/utils_1/imports/synth_1/TOP_TC.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/utils_1/imports/synth_1/TOP_TC.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP_TC -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 59324
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'done', assumed default net type 'wire' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/TOP_TC.sv:23]
+INFO: [Synth 8-11241] undeclared symbol 'clr', assumed default net type 'wire' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/TOP_TC.sv:24]
+INFO: [Synth 8-11241] undeclared symbol 'gen_done', assumed default net type 'wire' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/TOP_TC.sv:38]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1835.008 ; gain = 406.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_TC' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/TOP_TC.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'random_matrix' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/random_matrix.sv:3]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+	Parameter K bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'random_matrix' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/random_matrix.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'FIP_TC' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:3]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+	Parameter K bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/LUT.sv:3]
+	Parameter DATA_WIDTH bound to: 3 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter K bound to: 2 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/LUT.sv:44]
+INFO: [Synth 8-6157] synthesizing module 'SA' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/SA.sv:23]
+	Parameter DATA_WIDTH bound to: 3 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter K bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SA' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/SA.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'LUT' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/LUT.sv:3]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:48]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:48]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:48]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:48]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:77]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:77]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:77]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:77]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+WARNING: [Synth 8-689] width (6) of port connection 'C_out' does not match port width (8) of module 'LUT' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+INFO: [Synth 8-6155] done synthesizing module 'FIP_TC' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_TC' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/TOP_TC.sv:3]
+WARNING: [Synth 8-6014] Unused sequential element seed_local_reg was removed.  [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/random_matrix.sv:45]
+WARNING: [Synth 8-7137] Register gen_done_reg in module random_matrix has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/random_matrix.sv:58]
+WARNING: [Synth 8-6014] Unused sequential element C_reg_reg was removed.  [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/SA.sv:40]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1929.141 ; gain = 500.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1929.141 ; gain = 500.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1929.141 ; gain = 500.945
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1929.141 ; gain = 500.945
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 24    
+	   2 Input    8 Bit       Adders := 24    
+	   4 Input    6 Bit       Adders := 16    
+	   2 Input    4 Bit       Adders := 24    
+	   2 Input    3 Bit       Adders := 89    
++---XORs : 
+	   4 Input      1 Bit         XORs := 32    
++---Registers : 
+	                8 Bit    Registers := 49    
+	                3 Bit    Registers := 25    
+	                2 Bit    Registers := 56    
+	                1 Bit    Registers := 49    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 24    
+	   4 Input    4 Bit        Muxes := 24    
+	   2 Input    3 Bit        Muxes := 25    
+	   2 Input    1 Bit        Muxes := 97    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |    31|
+|3     |LUT3 |   187|
+|4     |LUT4 |   221|
+|5     |LUT5 |   205|
+|6     |LUT6 |   344|
+|7     |FDCE |   410|
+|8     |FDPE |    27|
+|9     |IBUF |     2|
+|10    |OBUF |    96|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------------+--------------+------+
+|      |Instance                               |Module        |Cells |
++------+---------------------------------------+--------------+------+
+|1     |top                                    |              |  1524|
+|2     |  u_Array_Input                        |FIP_TC        |  1120|
+|3     |    \gen_alaph_row[0].LUT_alpha_inst   |LUT           |    80|
+|4     |      SA                               |SA_45         |    64|
+|5     |    \gen_alaph_row[1].LUT_alpha_inst   |LUT_0         |    88|
+|6     |      SA                               |SA_44         |    72|
+|7     |    \gen_alaph_row[2].LUT_alpha_inst   |LUT_1         |    88|
+|8     |      SA                               |SA_43         |    72|
+|9     |    \gen_alaph_row[3].LUT_alpha_inst   |LUT_2         |    88|
+|10    |      SA                               |SA_42         |    72|
+|11    |    \gen_beta_col[0].LUT_beta_inst     |LUT_3         |    39|
+|12    |      SA                               |SA_41         |    23|
+|13    |    \gen_beta_col[1].LUT_beta_inst     |LUT_4         |    36|
+|14    |      SA                               |SA_40         |    20|
+|15    |    \gen_beta_col[2].LUT_beta_inst     |LUT_5         |    37|
+|16    |      SA                               |SA_39         |    21|
+|17    |    \gen_beta_col[3].LUT_beta_inst     |LUT_6         |    36|
+|18    |      SA                               |SA_38         |    20|
+|19    |    \row_loop[0].col_loop[0].LUT_inst  |LUT_7         |    41|
+|20    |      SA                               |SA_37         |    24|
+|21    |    \row_loop[0].col_loop[1].LUT_inst  |LUT_8         |    40|
+|22    |      SA                               |SA_36         |    23|
+|23    |    \row_loop[0].col_loop[2].LUT_inst  |LUT_9         |    39|
+|24    |      SA                               |SA_35         |    22|
+|25    |    \row_loop[0].col_loop[3].LUT_inst  |LUT_10        |    40|
+|26    |      SA                               |SA_34         |    23|
+|27    |    \row_loop[1].col_loop[0].LUT_inst  |LUT_11        |    39|
+|28    |      SA                               |SA_33         |    22|
+|29    |    \row_loop[1].col_loop[1].LUT_inst  |LUT_12        |    39|
+|30    |      SA                               |SA_32         |    22|
+|31    |    \row_loop[1].col_loop[2].LUT_inst  |LUT_13        |    39|
+|32    |      SA                               |SA_31         |    22|
+|33    |    \row_loop[1].col_loop[3].LUT_inst  |LUT_14        |    39|
+|34    |      SA                               |SA_30         |    22|
+|35    |    \row_loop[2].col_loop[0].LUT_inst  |LUT_15        |    39|
+|36    |      SA                               |SA_29         |    22|
+|37    |    \row_loop[2].col_loop[1].LUT_inst  |LUT_16        |    39|
+|38    |      SA                               |SA_28         |    22|
+|39    |    \row_loop[2].col_loop[2].LUT_inst  |LUT_17        |    39|
+|40    |      SA                               |SA_27         |    22|
+|41    |    \row_loop[2].col_loop[3].LUT_inst  |LUT_18        |    39|
+|42    |      SA                               |SA_26         |    22|
+|43    |    \row_loop[3].col_loop[0].LUT_inst  |LUT_19        |    39|
+|44    |      SA                               |SA_25         |    22|
+|45    |    \row_loop[3].col_loop[1].LUT_inst  |LUT_20        |    39|
+|46    |      SA                               |SA_24         |    22|
+|47    |    \row_loop[3].col_loop[2].LUT_inst  |LUT_21        |    39|
+|48    |      SA                               |SA_23         |    22|
+|49    |    \row_loop[3].col_loop[3].LUT_inst  |LUT_22        |    39|
+|50    |      SA                               |SA            |    22|
+|51    |  u_random_matrix                      |random_matrix |   305|
++------+---------------------------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.348 ; gain = 1437.152
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2866.895 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2933.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+Synth Design complete, checksum: 22966885
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2933.672 ; gain = 1516.133
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.runs/synth_1/TOP_TC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_TC_utilization_synth.rpt -pb TOP_TC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 08:51:17 2025...

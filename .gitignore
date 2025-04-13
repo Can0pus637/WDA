@@ -1,0 +1,22 @@
+# Ignore Vivado-generated files
+*.jou
+*.log
+*.str
+*.rpt
+*.html
+*.xml
+*.xpr
+*.dcp
+
+# Vivado project directories
+.cache/
+.runs/
+.sim/
+.hw/
+.ip_user_files/
+.xgui/
+
+# General temporary files
+*.tmp
+*.bak
+*~
